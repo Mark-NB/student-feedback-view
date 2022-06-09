@@ -1,8 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import studentFeedbackReducer from '../features/studentFeedback/studenFeedbackSlice';
+import displayLogicReducer from '../features/displayLogic/displayLogicSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    studentFeedback: studentFeedbackReducer,
+    displayLogic: displayLogicReducer
   },
 });
